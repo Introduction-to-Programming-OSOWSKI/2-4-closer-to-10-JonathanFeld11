@@ -1,10 +1,13 @@
 #WRITE YOUR CODE IN THIS FILE
+from re import X
+
+
 def close10(x, y):
-    if abs(10-x) > abs(10-y):
-        return y
-    elif abs(10 - x) < abs(10 - y):
+    if abs(10-x) < abs(10-y):
         return x
+    elif abs(10 - x) > abs(10 - y):
+        return y
     else:
         return 0
 
-print(close10(4, 9))
+print(close10(8, 12))
